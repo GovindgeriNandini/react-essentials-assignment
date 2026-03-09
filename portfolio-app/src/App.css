@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.toggle-btn {
+  margin-top: 20px;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+.dark-theme {
+  background-color: rgb(81, 81, 104);
+  color: white;
+}
+.dark-theme .profile-info h1,
+.dark-theme .profile-info h3,
+.dark-theme .portfolio-upperbody,
+.dark-theme .portfolio-lowerbody,
+.dark-theme .likes-btn {
+  color: white;
+}
+.dark-theme .dark-btn,
+.dark-theme .left-btn,
+.dark-theme .right-btn,
+.dark-theme .contact-btn {
+  background-color: rgb(45, 45, 111);
+}
+.dark-theme .email {
+  color: white;
+}

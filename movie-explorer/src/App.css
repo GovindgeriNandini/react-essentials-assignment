@@ -1,0 +1,43 @@
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.toggle-btn {
+  margin: 20px 0 10px 0;
+  border-radius: 12px;
+  font-size: medium;
+  width: 8%;
+  background: #daf4f5;
+
+  color: #303481;
+  border: 1px solid #303481;
+  font-weight: bold;
+}
+
+.App.dark-theme {
+  background-color: rgb(81, 81, 104);
+  color: white;
+}
+.App.light-theme {
+  background-color: white;
+}
+.dark-theme .header h1,
+.dark-theme .matching-movies,
+.dark-theme .favourite-section h2 {
+  color: white;
+}
+body.dark-theme {
+  background-color: rgb(81, 81, 104);
+}
+
+body.light-theme {
+  background-color: white;
+}
