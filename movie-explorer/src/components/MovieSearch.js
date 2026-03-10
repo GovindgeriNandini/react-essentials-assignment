@@ -63,7 +63,7 @@ const MovieSearch = () => {
         {searchTerm && (
           <p>
             {filteredMovies.length} result
-            {filteredMovies.length != 1 ? "s" : ""} for {`"${searchTerm}"`}
+            {filteredMovies.length !== 1 ? "s" : ""} for {`"${searchTerm}"`}
           </p>
         )}
       </div>
