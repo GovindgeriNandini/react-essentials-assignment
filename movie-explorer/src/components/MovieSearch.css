@@ -13,7 +13,7 @@ body {
   margin: 30px auto;
   margin-bottom: 0;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1000px;
   border-radius: 18px;
   box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -25,9 +25,10 @@ body {
 }
 .header,
 .body {
-  margin: 20px;
-  padding: 20px;
+  margin: 10px 20px;
+  padding: 15px;
 }
+
 .header h1 {
   font-size: 40px;
   text-align: left;
@@ -41,18 +42,19 @@ body {
 .search-container {
   margin-top: 10px;
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .search-bar {
-  width: 100%;
+  flex:1;
+  min-width: 200px;
   height: 35px;
   font-size: large;
   padding: 5px;
   font-weight: bold;
   color: #555;
-  margin-right: 5px;
   border-radius: 10px;
-  font-weight: 400;
 }
 
 .reset-btn {
@@ -69,12 +71,15 @@ body {
 .body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap:20px;
 }
 .matching-movies {
   color: #303481;
   padding: 20px;
-  width: 500px;
+  flex: 1;
+  min-width: 300px;
 }
 .movie-card {
   background: #daf4f5;
@@ -134,7 +139,8 @@ body {
 .favourite-section {
   padding: 20px;
   color: #303481;
-  width: 500px;
+  flex:1;
+  min-width: 300px;
 }
 .favourite-section p {
   color: #769fcd;
@@ -152,4 +158,28 @@ body {
 .fav-card:hover {
   transform: translateY(-4px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .movie-container {
+    width: 95%;
+  }
+  .search-container {
+    flex-direction: column;
+  }
+  .reset-btn {
+    width: 120px;
+  }
+
+  .matching-movies, .favourite-section {
+    text-align: center;
+  }
+   .header {
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+  
 }
